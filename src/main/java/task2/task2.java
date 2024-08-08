@@ -7,10 +7,9 @@ import java.util.*;
 
 public class task2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         List<Integer> pointsPositions = createPointsPositions(
-                getCircle(scanner.nextLine()),
-                getPoints(scanner.nextLine()));
+                getCircle(args[0]),
+                getPoints(args[1]));
         pointsPositions.forEach(System.out::println);
     }
 

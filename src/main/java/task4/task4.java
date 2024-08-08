@@ -13,8 +13,7 @@ import java.util.Scanner;
  */
 public class task4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        List<Integer> nums = getNums(scanner.nextLine());
+        List<Integer> nums = getNums(args[0]);
         int average = getAverage(nums);
         int stepsQuantity = 0;
 

@@ -4,8 +4,9 @@ import java.util.*;
 
 public class task1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String[] strArr = scanner.nextLine().split(" ");
+//        Scanner scanner = new Scanner(System.in);
+//        String[] strArr = scanner.nextLine().split(" ");
+        String[] strArr = args[0].split(" ");
         int n = Integer.parseInt(strArr[0]);
         int m = Integer.parseInt(strArr[1]);
         System.out.println(getPathCircleArray(n, m));

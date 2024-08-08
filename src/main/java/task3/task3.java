@@ -19,15 +19,10 @@ public class task3 {
     private static final List<Test> TEST_LIST = new ArrayList<>();
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String valuesFilePath = scanner.nextLine();
-        String testsFilePath = scanner.nextLine();
-        String reportFilePath = scanner.nextLine();
-
-        getValues(valuesFilePath);
-        getTests(testsFilePath);
+        getValues(args[0]);
+        getTests(args[1]);
         TEST_LIST.forEach(task3::setValues);
-        writeReport(reportFilePath);
+        writeReport(args[2]);
     }
 
     /**
